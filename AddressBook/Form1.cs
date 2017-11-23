@@ -23,8 +23,8 @@ namespace AddressBook
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
             /*
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
             if (!Directory.Exists(path + "\\AddressBook"))
                 Directory.CreateDirectory(path + "\\AddressBook");
             */
