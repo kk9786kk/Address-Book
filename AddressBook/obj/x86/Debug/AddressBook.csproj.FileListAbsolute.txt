@@ -1,0 +1,18 @@
+D:\Visual Studio 2010\Projects\AddressBook\AddressBook\bin\Debug\AddressBook.exe
+D:\Visual Studio 2010\Projects\AddressBook\AddressBook\bin\Debug\AddressBook.pdb
+D:\Visual Studio 2010\Projects\AddressBook\AddressBook\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio 2010\Projects\AddressBook\AddressBook\obj\x86\Debug\AddressBook.Form1.resources
+D:\Visual Studio 2010\Projects\AddressBook\AddressBook\obj\x86\Debug\AddressBook.Properties.Resources.resources
+D:\Visual Studio 2010\Projects\AddressBook\AddressBook\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Visual Studio 2010\Projects\AddressBook\AddressBook\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Visual Studio 2010\Projects\AddressBook\AddressBook\obj\x86\Debug\AddressBook.exe
+D:\Visual Studio 2010\Projects\AddressBook\AddressBook\obj\x86\Debug\AddressBook.pdb
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\bin\Debug\AddressBook.exe
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\bin\Debug\AddressBook.pdb
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\obj\x86\Debug\AddressBook.csprojResolveAssemblyReference.cache
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\obj\x86\Debug\AddressBook.Form1.resources
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\obj\x86\Debug\AddressBook.Properties.Resources.resources
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\obj\x86\Debug\AddressBook.csproj.GenerateResource.Cache
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\obj\x86\Debug\AddressBook.csproj.CoreCompileInputs.cache
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\obj\x86\Debug\AddressBook.exe
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\obj\x86\Debug\AddressBook.pdb

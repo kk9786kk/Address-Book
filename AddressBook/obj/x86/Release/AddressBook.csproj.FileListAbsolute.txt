@@ -1,0 +1,8 @@
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\bin\Release\AddressBook.exe
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\bin\Release\AddressBook.pdb
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\obj\x86\Release\AddressBook.Form1.resources
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\obj\x86\Release\AddressBook.Properties.Resources.resources
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\obj\x86\Release\AddressBook.csproj.GenerateResource.Cache
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\obj\x86\Release\AddressBook.csproj.CoreCompileInputs.cache
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\obj\x86\Release\AddressBook.exe
+C:\Users\華翌凱\Desktop\AddressBook-master\AddressBook\obj\x86\Release\AddressBook.pdb
