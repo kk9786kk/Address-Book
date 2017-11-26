@@ -39,7 +39,7 @@ namespace AddressBook
                 p.EmailID = xNode.SelectSingleNode("Email").InnerText;
                 p.LINE = xNode.SelectSingleNode("Facebook").InnerText;
                 p.Phone = xNode.SelectSingleNode("Phone").InnerText;
-                p.AdditionalNotes = xNode.SelectSingleNode("Notes").InnerText;
+                p.Notes = xNode.SelectSingleNode("Notes").InnerText;
                 p.Birthday = DateTime.FromFileTime(Convert.ToInt64(xNode.SelectSingleNode("Birthday").InnerText));
                 people.Add(p);
                 listBox.Items.Add(p.Name);
@@ -55,7 +55,7 @@ namespace AddressBook
                 textBox2.Text = people[index].EmailID;
                 textBox3.Text = people[index].LINE;
                 textBox4.Text = people[index].Phone;
-                textBox5.Text = people[index].AdditionalNotes;
+                textBox5.Text = people[index].Notes;
                 dateTimePicker1.Value = people[index].Birthday;
             }
             catch { }
@@ -69,7 +69,7 @@ namespace AddressBook
             p.LINE = textBox3.Text;
             p.Birthday = dateTimePicker1.Value;
             p.Phone = textBox4.Text;
-            p.AdditionalNotes = textBox5.Text;
+            p.Notes = textBox5.Text;
             people.Add(p);
             listBox.Items.Add(p.Name);
             textBox1.Text = textBox2.Text = textBox3.Text = textBox4.Text = textBox5.Text = "";
@@ -84,7 +84,7 @@ namespace AddressBook
                 people[index].EmailID = textBox2.Text;
                 people[index].LINE = textBox3.Text;
                 people[index].Phone = textBox4.Text;
-                people[index].AdditionalNotes = textBox5.Text;
+                people[index].Notes = textBox5.Text;
                 people[index].Birthday = dateTimePicker1.Value; ;
                 listBox.Items[index] = textBox1.Text;
             }
@@ -122,7 +122,7 @@ namespace AddressBook
                 xName.InnerText = p.Name;
                 xEmail.InnerText = p.EmailID;
                 xFacebook.InnerText = p.LINE;
-                xNotes.InnerText = p.AdditionalNotes;
+                xNotes.InnerText = p.Notes;
                 xBirthday.InnerText = p.Birthday.ToFileTime().ToString();
                 xPhone.InnerText = p.Phone;
                 xTop.AppendChild(xName);
@@ -163,7 +163,7 @@ namespace AddressBook
                 textBox2.Text = people[index].EmailID;
                 textBox3.Text = people[index].LINE;
                 textBox4.Text = people[index].Phone;
-                textBox5.Text = people[index].AdditionalNotes;
+                textBox5.Text = people[index].Notes;
                 dateTimePicker1.Value = people[index].Birthday;
             }
             catch { }
@@ -196,7 +196,7 @@ namespace AddressBook
             get;
             set;
         }
-        public string AdditionalNotes
+        public string Notes
         {
             get;
             set;
