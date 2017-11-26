@@ -141,9 +141,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(12, 143);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 12);
+            this.label6.Size = new System.Drawing.Size(32, 12);
             this.label6.TabIndex = 10;
-            this.label6.Text = "Additional Notes";
+            this.label6.Text = "備註:";
             // 
             // textBox4
             // 
@@ -221,9 +221,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 12);
+            this.label1.Size = new System.Drawing.Size(35, 12);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Full Name:";
+            this.label1.Text = "Name:";
             // 
             // search
             // 

@@ -23,11 +23,6 @@ namespace AddressBook
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            /*
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            if (!Directory.Exists(path + "\\AddressBook"))
-                Directory.CreateDirectory(path + "\\AddressBook");
-            */
             if (!File.Exists("settings.xml"))
             {
                 XmlTextWriter xw = new XmlTextWriter("settings.xml", Encoding.UTF8);
@@ -112,7 +107,6 @@ namespace AddressBook
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             XmlDocument xdoc = new XmlDocument();
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
             xdoc.Load("settings.xml");
             XmlNode xnode = xdoc.SelectSingleNode("People");
             xnode.RemoveAll();
@@ -139,32 +133,22 @@ namespace AddressBook
                 xTop.AppendChild(xPhone);
                 xdoc.DocumentElement.AppendChild(xTop);
             }
-            //xdoc.Save(path + "\\AddressBook\\settings.xml");
             xdoc.Save("settings.xml");
         }
 
         private void search_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            if (textBox6.Text == "")
-            {
-                /*
-                foreach (var p in people)
-                    listBox1.Items.Add(p.name);
-                searchPeople = new List<Person>(people);
-                */
-            }
-            else
+            if (textBox6.Text != "")
             {
                 var p = people
-                    .Select((x, i) => new PersonIndex() { person = x, Index = i })
-                    .Where(x => x.person == textBox6.Text)
-                    .Select(x => x);
+                   .Select((x, i) => new PersonIndex() { Person = x, Index = i })
+                   .Where(x => x.Person == textBox6.Text)
+                   .Select(x => x);
                 searchPeople = new List<PersonIndex>(p);
                 foreach (var sp in searchPeople)
-                    listBox1.Items.Add(sp.person.Name);
+                    listBox1.Items.Add(sp.Person.Name);
             }
-
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -173,11 +157,6 @@ namespace AddressBook
             try
             {
                 sindex = listBox1.SelectedIndex;
-                /*
-                var s = people.Select((p, i) => new { person = p, index = i })
-                    .Where(x => x.person == searchPeople[sindex])
-                    .Select(x => x);
-                */
                 index = searchPeople[sindex].Index;
                 listBox.SelectedIndex = index;
                 textBox1.Text = people[index].Name;
@@ -192,7 +171,7 @@ namespace AddressBook
     }
     class PersonIndex
     {
-        public Person person { get; set; }
+        public Person Person { get; set; }
         public int Index { get; set; }
     }
     class Person
